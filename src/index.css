@@ -22,7 +22,7 @@ div#root {
 }
 
 main {
-    background-color: #F5F5F5;
+    background-color: #f1efef;
     height: 100%;
     border-radius: 10px;
     display: flex;
@@ -42,6 +42,21 @@ main {
     font-weight: 400;
     margin-top: 0;
     text-align: center;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent black */
+    backdrop-filter: blur(10px);    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .die-container{
