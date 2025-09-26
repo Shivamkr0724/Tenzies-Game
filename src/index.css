@@ -48,7 +48,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 90px;
     height: 40px;
     background: rgba(255, 255, 255, 0.3); /* Semi-transparent black */
     backdrop-filter: blur(10px);    /* Blur effect */
