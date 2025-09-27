@@ -5,16 +5,33 @@ import ReactConfetti from "react-confetti";
 
 export default function App(){
 
+  const score = 'highest'
   const [dice , setDice] = useState(() => getAllNewDice()); 
   const [count , setCount] = useState(0);
+  const [bestScore , setBestScore] = useState(() =>{
+    const rawScore = localStorage.getItem(score);
+    if(!rawScore) return 0;
+    return JSON.parse(rawScore);
+  });
   const buttonRef = useRef(null)
 
    const GameWon = dice.every(die => die.isHeld) &&
     dice.every(die => die.value === dice[0].value);
+    
+    function getBestScore(){
+       if(bestScore===0){
+        setBestScore(count)
+       }
+       else if(GameWon && count < bestScore){
+        setBestScore(count)
+       }
+
+    }
 
     useEffect(() => {
       if(GameWon){
         buttonRef.current.focus()
+        getBestScore();
       }
     })
 
@@ -63,6 +80,8 @@ export default function App(){
                     hold={() => hold(dieObj.id)}
                 />)
     ) 
+
+    localStorage.setItem(score,JSON.stringify(bestScore))
    
 
   return(
@@ -73,7 +92,8 @@ export default function App(){
            Roll until all dice are the same. Click each die to freeze it at its current value between rolls.
         </p>
         <div className="count">
-          <h3 >{`Rolls: ${count}`}</h3>
+          <h3 className="best">{`BestScore: ${bestScore}`}</h3>
+          <h3 className="best">{`Rolls: ${count}`}</h3>
         </div>
         
 
