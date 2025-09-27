@@ -113,10 +113,11 @@ button{
 @media (max-width: 480px) {
     div#root {
         max-width: 100%;
-        max-height: 80%;
+        max-height: 60%;
     }
 
     .instructions {
+        width: 80%;
         font-size: 0.85rem;
         margin: 0;
     }
