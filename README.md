@@ -1,10 +1,10 @@
-<div align="center">
 🎲 Tenzies Game
 
+<div align="center">
 <br>
  <img src="public/logo.png" alt="Project Banner">
 </br>
-
+</div>
 Tenzies is a fun and interactive dice game built with React.js.
 The goal is simple: roll until all dice show the same number. You can freeze dice by clicking on them to keep their value while rolling the rest. It’s a mix of luck and strategy!
 
@@ -56,5 +56,3 @@ npm run dev
 ```
 
 The app will run at http://localhost:3000
-
-</div>
