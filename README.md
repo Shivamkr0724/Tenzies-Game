@@ -8,8 +8,9 @@
 Tenzies is a fun and interactive dice game built with React.js.
 The goal is simple: roll until all dice show the same number. You can freeze dice by clicking on them to keep their value while rolling the rest. It’s a mix of luck and strategy!
 <br>
+<br>
 🚀 Features
-
+<br>
 🎲 10 Dice Gameplay – Roll and hold dice interactively
 
 🏆 Best Score Tracking – Stores your lowest roll count using LocalStorage
