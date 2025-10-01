@@ -11,6 +11,7 @@ The goal is simple: roll until all dice show the same number. You can freeze dic
 <br>
 🚀 Features
 <br>
+<br>
 🎲 10 Dice Gameplay – Roll and hold dice interactively
 
 🏆 Best Score Tracking – Stores your lowest roll count using LocalStorage
