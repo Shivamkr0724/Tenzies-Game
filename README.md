@@ -1,12 +1,60 @@
-# React + Vite
+<div align="center">
+🎲 Tenzies Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
+ <img src="public/logo.png" alt="Project Banner">
+</br>
 
-Currently, two official plugins are available:
+Tenzies is a fun and interactive dice game built with React.js.
+The goal is simple: roll until all dice show the same number. You can freeze dice by clicking on them to keep their value while rolling the rest. It’s a mix of luck and strategy!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## Expanding the ESLint configuration
+🎲 10 Dice Gameplay – Roll and hold dice interactively
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🏆 Best Score Tracking – Stores your lowest roll count using LocalStorage
+
+🔄 New Game Button – Reset and play again instantly
+
+🎉 Confetti Animation – Celebrate when you win
+
+📊 Roll Counter – See how many rolls it took to win
+
+🎮 How to Play
+
+Click Roll to roll all 10 dice.
+
+Click on any die to hold its value (it stays fixed).
+
+Continue rolling until all dice have the same number.
+
+Try to win in the fewest rolls possible to beat your best score.
+
+After winning, click New Game to restart.
+
+🛠️ Tech Stack
+
+React.js (Hooks & Components)
+
+nanoid (for unique dice IDs)
+
+React-Confetti (win animation)
+
+LocalStorage (persistent best score)
+
+📂 Project Setup
+
+Clone the repo and install dependencies:
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/your-username/tenzies.git
+cd tenzies
+npm install
+npm run dev
+```
+
+The app will run at http://localhost:3000
+
+</div>

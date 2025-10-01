@@ -34,8 +34,10 @@ main {
 }
 
 .title {
+    font-family: "Black Ops One", system-ui;
     font-size: 40px;
     margin: 0;
+    font-weight: 500;
 }
 
 .instructions {

@@ -28,12 +28,27 @@ export default function App(){
 
     }
 
+  async function doStuff() {
+  const text = await figlet.text("Tenzies", {
+    font: "Standard"   // ← use a bundled font name
+  });
+  console.log(text);
+}
+
+  async function doStuff() {
+  const text = await figlet.text("Tenzies");
+  console.log(text);
+}
+
+
+
     useEffect(() => {
       if(GameWon){
         buttonRef.current.focus()
         getBestScore();
       }
     })
+
 
    function getAllNewDice(){
       return new Array(10)
